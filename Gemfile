@@ -20,8 +20,10 @@ gem 'simple_form'
 group :test do
 	gem 'rspec-rails', '2.9.0'
 	gem 'capybara', '1.1.2'
-	gem 'rb-inotify', '0.8.8'
-	gem 'libnotify', '0.5.9'
+#	gem 'rb-inotify', '0.8.8' # Linux
+#	gem 'libnotify', '0.5.9' # Linux
+	gem 'rb-fsevent', :require => false # Mac
+	gem 'growl', '1.0.3' # Mac
 	gem 'guard-spork', '0.3.2'
 	gem 'spork', '0.9.0'
 end
